@@ -13,11 +13,11 @@
                 "ms-azuretools.vscode-containers"
             ],
             "settings": {
-                //Cambiar el venv
-                "python.defaultInterpreterPath": "/app/.venv/bin/python",
+
+                "python.defaultInterpreterPath": "/app/.ml/bin/python",
                 "jupyter.notebookFileRoot": "${workspaceFolder}"
             }
         }
     },
-    "postCreateCommand": "echo 'source /app/.venv/bin7activate'>> ~/.bashrc"
+    "postCreateCommand": "echo 'source /app/.ml/bin7activate'>> ~/.bashrc"
 }
