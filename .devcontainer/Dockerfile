@@ -9,11 +9,11 @@ RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 
 ENV PATH="/root/.local/bin:$PATH"
 WORKDIR /app
-//Cambiar 
+
 RUN uv venv .venv
 
 COPY requirements.txt .
-//Cambiar 
+
 RUN uv pip install --python .venv/bin/python -r requirements.txt
 
 ENV VIRTUAL_ENV=/app/.venv
