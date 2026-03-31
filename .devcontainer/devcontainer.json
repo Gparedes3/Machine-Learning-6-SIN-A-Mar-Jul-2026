@@ -1,0 +1,23 @@
+{
+    "name": "ML Worshop 2 - Work Enviroment",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "ms-toolsai.jupyter-renderers",
+                "charliermarsh.ruff",
+                "ms-azuretools.vscode-containers"
+            ],
+            "settings": {
+
+                "python.defaultInterpreterPath": "/app/.ml/bin/python",
+                "jupyter.notebookFileRoot": "${workspaceFolder}"
+            }
+        }
+    },
+    "postCreateCommand": "echo 'source /app/.ml/bin7activate'>> ~/.bashrc"
+}
